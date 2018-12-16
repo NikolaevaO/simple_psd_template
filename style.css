@@ -4,6 +4,12 @@
   src: url(fonts/ArialMT.woff) format('woff'); /*подкл. файл со шрифтом*/
 }
 
+@font-face {
+  font-family: 'Socialico';
+  src: url(Socialico/Socialico.ttf) format('truetype');
+  src: url(Socialico/Socialico.woff) format('woff'); /*подкл. файл со шрифтом*/
+}
+
 body {
   background-color: #fff;
   font-family: 'Arial MT', sans-serif;
@@ -23,12 +29,11 @@ body {
 header {
   background-color: #445162;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: #fff;
 }
 
 header,
-section,
-footer {
+section {
   padding: 50px;
 }
 
@@ -85,7 +90,7 @@ h3 {
 .plus li {
   list-style-type: none;
   text-decoration: none;
-  color: #333333;
+  color: #333;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -169,11 +174,139 @@ h3 {
   left: -10px;
   top: 27px;
   background: #ebebeb;
-  transform: rotate(45deg);
+  transform: rotate(45deg);/*поворачиваем созданный контент на 45 градусов*/
 }
 
 .author {
   color: #989898;
   margin-bottom: 0;
   margin-top: 5px;
+}
+
+.buyNow .row {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buyNowCard {
+  background-color: #445162;
+  max-width: calc(33.33% - 30px);
+  padding: 0;
+  border: 2px solid #445162;
+  border-radius: 5px;
+}
+
+.price {
+  color: #445162;
+  background-color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 71px;
+}
+
+.buyNowCard h3 {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.buyNowCard ol {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px;
+  list-style-position: inside;
+}
+
+.buyNow input {
+  width: calc(100% - 40px);
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #445161;
+}
+
+footer {
+  background-color: #445162;
+  color: #fff;
+  padding-top: 50px;
+}
+
+footer h2 {
+  color: inherit;
+}
+
+footer .row {
+  justify-content: center;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 0 10px;
+  line-height: 40px;
+  border: #fff 1px solid;
+  border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-weight: bold;
+  color: #445162;
+}
+
+.social {
+  margin-top: -12px;
+  max-width: 240px;
+  padding-left: 30px;
+  line-height: 2.5em;
+}
+
+@media (max-width: 768px) {
+  .social {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.form {
+  max-width: 500px;
+}
+
+.socialButtons {
+  font-family: 'Socialico';
+  font-size: 60px;
+  line-height: 1.5em;
+}
+
+.copy {
+  background-color: #f5f5f5;
+  color: #445162;
+  font-family: "Arial MT";
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 50px;
 }
