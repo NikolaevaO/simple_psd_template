@@ -52,6 +52,13 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  color: #445161;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  }
+
 .about h2 {
   text-align: left;
 }
@@ -105,8 +112,34 @@ h2 {
   margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+  .plus li {
+    margin-bottom: 35px;
+  }
+}
+
 .dignity {
   background-color: #f5f5f5;
+}
+
+.screenshots img {
+  float: left;
+  padding-top: 5px;
+}
+
+.screenshots p,
+.screenshots h3 {
+  padding-left: 215px;
+}
+
+@media (max-width: 1200px) {
+  .screenshots img {
+    width: 100%;
+  }
+  .screenshots p,
+  .screenshots h3 {
+    padding: 0;
+  }
 }
 
 
