@@ -142,4 +142,38 @@ h3 {
   }
 }
 
+.reviews {
+  background-color:#f5f5f5;
+}
+.reviews img {
+  border-radius: 50%;
+  float: left;
+}
 
+.reviews blockquote {
+  position: relative;
+  background: #ebebeb;
+  margin-left: 110px;
+  padding: 16px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.reviews blockquote:before {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);
+}
+
+.author {
+  color: #989898;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
