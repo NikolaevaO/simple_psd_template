@@ -13,23 +13,28 @@
 </head>
 <body>
   <div class="container">
-    <header class="row">
-      <div class="col-md-6">
-        <h1>Product name</h1>
-        <ul class="product-name">
-          <li><span class="fas fa-check"></span> Put on this page information about your product</li>
-          <li><span class="fas fa-check"></span> A detailed description of your product</li>
-          <li><span class="fas fa-check"></span> Tell us about the advantages and merits</li>
-          <li><span class="fas fa-check"></span> Associate the page with the payment system</li>
-        </ul>
-      </div>
-      <div class="col-md-6 align-right">
+    <header>
+      <video class="background-video" loop muted autoplay>
+        <source src="videos/IndianTeaPlantations.mp4">
+      </video>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Product name</h1>
+          <ul class="product-name">
+            <li><span class="fas fa-check"></span> Put on this page information about your product</li>
+            <li><span class="fas fa-check"></span> A detailed description of your product</li>
+            <li><span class="fas fa-check"></span> Tell us about the advantages and merits</li>
+            <li><span class="fas fa-check"></span> Associate the page with the payment system</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 align-right">
           <img src="img/mountain.jpg" alt="mountain">
         </div>
+      </div>
     </header>
     <main>
       <section class="row about">
-        <div class="col-md-7">
+        <div class="col-lg-7">
           <h2>About your product</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -42,8 +47,10 @@
             Sequi itaque, unde perferendis nemo debitis dolor.
           </p>
         </div>
-        <div class="col-md-5 align-right">
-          <img src="img/tree.jpg" alt="tree">
+        <div class="col-lg-5 align-right">
+          <video controls>
+            <source src="videos/Dirt-bike.mp4">
+          </video>
         </div>
       </section>
       <section class="dignity">
@@ -236,9 +243,10 @@
       <h2>Contacts</h2>
       <div class="row">
         <div class="form col-md-7">
-          <form action="">
-            <input type="text" placeholder="Your name:">
-            <input type="email" placeholder="Your email:">
+          <form action="#">
+            <input type="text" required placeholder="Your name: *"><!--атрибут required -
+              чтобы не допустить пустого поля адреса (обязательное поле ввода)-->
+            <input type="email" required placeholder="Your email: *">
             <textarea placeholder="Your message:" rows="4" cols="50"></textarea>
             <input type="submit" value="SEND">
           </form>

@@ -30,6 +30,19 @@ header {
   background-color: #445162;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /*Видео заполняет всю доступн. обл., даже если часть его скрыта*/
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);/*размытие по Гаусу, видео, картинок или текста (может указываться в любых ед.)*/
 }
 
 header,
@@ -37,13 +50,16 @@ section {
   padding: 50px;
 }
 
-header > div.col-md-6,
+header > div.col-lg-6,
 section > div.col-md-5,
-section > div.col-md-7 {
+section > div.col-md-7,
+section > div.col-lg-5,
+section > div.col-lg-7 {
   padding: 0;
 }
 
 h1 {
+  margin-top: -4px;
   margin-bottom: 42px;
   line-height: 1;
 }
@@ -62,10 +78,21 @@ h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
-  }
+}
 
 .about h2 {
   text-align: left;
+  margin-top: -6px;
+}
+
+video {
+  width: 88%;
+}
+
+@media (max-width: 992px) {
+  video {
+    width: 100%;
+  }
 }
 
 .product-name {
@@ -185,7 +212,7 @@ h3 {
 
 .buyNow .row {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-end; /*Выравнивание по поперечной оси*/
 }
 
 .buyNowCard {
@@ -217,7 +244,7 @@ h3 {
   font-weight: 400;
   line-height: 24px;
   margin: 20px;
-  list-style-position: inside;
+  list-style-position: inside;/*расположение маркеров списка внути текста*/
 }
 
 .buyNow input {
