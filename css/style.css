@@ -375,3 +375,15 @@ a:hover {
   text-align: center;
   margin-top: 50px;
 }
+
+.myHidden {
+  opacity: 0;
+}
+
+.myVisible {
+  opacity: 1;
+}
+
+.reviewsUnit {
+  transition-duration: 1s;
+}

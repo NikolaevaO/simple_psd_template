@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="Socialico/stylesheet.css">
   <link rel="stylesheet" href="fontawesome-free-5.6.1-web/css/all.min.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>simple_psd_template</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
       </div>
     </header>
     <main>
-      <section class="row about">
+      <section class="row about myHidden">
         <div class="col-lg-7">
           <h2>About your product</h2>
           <p>
@@ -52,7 +53,7 @@
           </video>
         </div>
       </section>
-      <section class="dignity">
+      <section class="dignity myHidden">
         <h2>Dignity and pluses product</h2>
         <ul class="row plus">
           <li class="col-md-4">
@@ -105,7 +106,7 @@
           </li>
         </ul>
       </section>
-      <section class="screenshots">
+      <section class="screenshots myHidden">
         <h2>Screenshots</h2>
         <div class="row">
           <article class="row col-md-6">
@@ -165,7 +166,7 @@
       <section class="reviews">
         <h2>Reviews</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="reviewsUnit col-md-6 myHidden">
             <img src="img/sky.jpg" alt="sky">
             <blockquote>
               Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
@@ -174,7 +175,7 @@
               <p class="author">Lourens S.</p>
             </blockquote>
           </div>
-          <div class="col-md-6">
+          <div class="reviewsUnit col-md-6 myHidden">
             <img src="img/sky.jpg" alt="sky">
             <blockquote>
               Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
@@ -183,7 +184,7 @@
              <p class="author">Lourens S.</p>
             </blockquote>
           </div>
-          <div class="col-md-6">
+          <div class="reviewsUnit col-md-6 myHidden">
             <img src="img/sky.jpg" alt="sky">
             <blockquote>
               Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
@@ -192,7 +193,7 @@
              <p class="author">Lourens S.</p>
             </blockquote>
           </div>
-          <div class="col-md-6">
+          <div class="reviewsUnit col-md-6 myHidden">
           <img src="img/sky.jpg" alt="sky">
             <blockquote>
               Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
@@ -206,7 +207,7 @@
       <section class="buyNow">
         <h2>Buy it now</h2>
         <div class="row">
-          <div class="buyNowCard col-lg-4">
+          <div class="buyNowCard myHidden col-lg-4">
             <h3>Standart</h3>
             <p class="price">$100</p>
             <ol>
@@ -220,7 +221,7 @@
               <button type="submit">BUY</button>
             </form>
           </div>
-          <div class="buyNowCard col-lg-4">
+          <div class="buyNowCard myHidden col-lg-4">
             <h3>Premium</h3>
             <p class="price">$150</p>
             <ol>
@@ -237,7 +238,7 @@
               <button type="submit">BUY</button>
             </form>
           </div>
-          <div class="buyNowCard col-lg-4">
+          <div class="buyNowCard myHidden col-lg-4">
             <h3>Lux</h3>
             <p class="price">$200</p>
             <ol>
@@ -261,7 +262,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="myHidden">
       <h2>Contacts</h2>
       <div class="row">
         <div class="form col-md-7">
@@ -292,5 +293,8 @@
       </div>
     </footer>
   </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.viewportchecker.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
