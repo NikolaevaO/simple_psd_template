@@ -262,7 +262,8 @@ video {
   list-style-position: inside;/*расположение маркеров списка внути текста*/
 }
 
-.buyNow input {
+.buyNow input,
+.buyNow button {
   width: calc(100% - 40px);
   height: 40px;
   background-color: #fff;
