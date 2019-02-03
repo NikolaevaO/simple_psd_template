@@ -215,7 +215,8 @@
               <li>Cum odio, iste quia doloribus autem;</li>
               <li>Aperiam nulla ea neque.</li>
             </ol>
-            <form method="post" action="#">
+            <form method="post" action="#"><!--Всегда исп-вать метод post
+            для передачи данных на сервер (более безопасен для пользователя, чем get-->
               <button type="submit">BUY</button>
             </form>
           </div>
@@ -264,7 +265,7 @@
       <h2>Contacts</h2>
       <div class="row">
         <div class="form col-md-7">
-          <form action="#">
+          <form method="post" action="#">
             <input type="text" required placeholder="Your name: *"><!--атрибут required -
               чтобы не допустить пустого поля адреса (обязательное поле ввода)-->
             <input type="email" required placeholder="Your email: *">
