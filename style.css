@@ -329,8 +329,9 @@ form input[type="submit"] {
 
 .social {
   margin-top: -12px;
-  max-width: 240px;
+  max-width: 270px;
   padding-left: 30px;
+  padding-right: 0;
   line-height: 2.5em;
 }
 
@@ -338,6 +339,7 @@ form input[type="submit"] {
   .social {
     margin-top: 20px;
     text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -345,14 +347,21 @@ form input[type="submit"] {
   max-width: 500px;
 }
 
-.socialButtons {
+.icon {
   font-family: 'Socialico';
   font-size: 60px;
   line-height: 1.5em;
+  color: #fff;
+  letter-spacing: -4px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
-  .socialButtons {
+  .icon {
   font-size: 45px;
   }
 }
