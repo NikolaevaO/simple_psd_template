@@ -15,11 +15,6 @@ body {
   font-family: 'Arial MT', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: 1280px) {
   div.container {
     max-width: 1280px;
@@ -382,8 +377,4 @@ a:hover {
 
 .myVisible {
   opacity: 1;
-}
-
-.reviewsUnit {
-  transition-duration: 1s;
 }
