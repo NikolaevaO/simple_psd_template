@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Arial MT';
   src: url(fonts/ArialMt.ttf) format('truetype');
-  src: url(fonts/ArialMT.woff) format('woff'); /*подкл. файл со шрифтом*/
+  src: url(../fonts/ArialMT.woff) format('woff'); /*подкл. файл со шрифтом*/
 }
 
 @font-face {
   font-family: 'Socialico';
   src: url(Socialico/Socialico.ttf) format('truetype');
-  src: url(Socialico/Socialico.woff) format('woff'); /*подкл. файл со шрифтом*/
+  src: url(../Socialico/Socialico.woff) format('woff'); /*подкл. файл со шрифтом*/
 }
 
 body {

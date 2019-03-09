@@ -1,36 +1,43 @@
 jQuery(document).ready(function() {
     jQuery('.about').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated slideInLeft',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('.dignity').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated slideInRight',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('.screenshots').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated fadeIn',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('.reviewsUnit-top').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated slideInRight',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('.reviewsUnit-bottom').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated slideInLeft',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('.buyNowCard').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated rollIn',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 
     jQuery('footer').addClass("myHidden").viewportChecker({
         classToAdd: 'myVisible animated zoomInUp',
-        offset: 250
+        repeat: true,
+        offset: 100
     });
 });
