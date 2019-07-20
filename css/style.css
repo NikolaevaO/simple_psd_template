@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Arial MT';
   src: url(../fonts/ArialMt.ttf) format('truetype');
-  src: url(../fonts/ArialMT.woff) format('woff'); /*подкл. файл со шрифтом*/
+  src: url(../fonts/ArialMT.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Socialico';
   src: url(../Socialico/Socialico.ttf) format('truetype');
-  src: url(../Socialico/Socialico.woff) format('woff'); /*подкл. файл со шрифтом*/
+  src: url(../Socialico/Socialico.woff) format('woff');
 }
 
 body {
@@ -213,7 +213,7 @@ video {
 .buyNow .row {
   justify-content: space-between;
   align-items: flex-end; /*Выравнивание по поперечной оси*/
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .buyNowCard {
@@ -257,6 +257,19 @@ video {
   list-style-position: inside;/*расположение маркеров списка внути текста*/
 }
 
+@media (max-width: 1200px) and (min-width: 768px) {
+  .buyNowCard ol {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .buyNowCard ol {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 .buyNow input,
 .buyNow button {
   width: calc(100% - 40px);
@@ -269,6 +282,7 @@ video {
   font-size: 18px;
   font-weight: bold;
   color: #445161;
+  transition: all 0.8s ease;
 }
 
 footer {
@@ -320,6 +334,13 @@ form input[type="submit"] {
   background-color: #fff;
   font-weight: bold;
   color: #445162;
+  transition: all 0.8s ease;
+}
+/*аним. кнопок*/
+form input[type="submit"]:hover,
+form button[type="submit"]:hover {
+  border-radius:100%;
+  cursor: pointer;
 }
 
 .social {
@@ -344,15 +365,20 @@ form input[type="submit"] {
 
 .icon {
   font-family: 'Socialico';
-  font-size: 60px;
-  line-height: 1.5em;
+  font-size: 58px;
+  display: inline-block;
+  margin-top: 15px;
+  background: #445162;
   color: #fff;
-  letter-spacing: -4px;
+  border-radius: 50%;
+  letter-spacing: -2px;
+  transition: all 0.5s ease;
 }
 
-a:hover {
+.icon:hover {
   text-decoration: none;
   color: #fff;
+  transform: scale(1.2);
 }
 
 @media (max-width: 992px) {

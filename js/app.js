@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
     });
 
     jQuery('footer').addClass("myHidden").viewportChecker({
-        classToAdd: 'myVisible animated zoomInUp',
+        classToAdd: 'myVisible animated zoomIn',
         repeat: true,
         offset: 100
     });
